@@ -7,52 +7,41 @@
     <link rel="stylesheet" href="./assets/css/main.min.css" />
   </head>
   <body>
-    <h1>Lorem, ipsum dolor.</h1>
+    <img src="https://picsum.photos/id/10/100" alt="my-image">
+    <h1 class="heading">Lorem, ipsum dolor.</h1>
 
-    <form>
+    <form class="form-1">
+      <fieldset>
+        <legend>registration form</legend>
+        <label
+          >username
+          <input type="text" disabled />
+        </label>
+        <label>password
+          <input type="email" required/>
+        </label>
+        <label
+          >password
+          <input type="password" />
+        </label>
 
-        <select name="fruit">
-            <option value="apple">apple</option>
-            <option value="orange" selected>orange</option>
-            <option value="pear">pear</option>
-        </select>
-
-        <hr>
-
-        <input type="checkbox">friday
-        <input type="checkbox" checked>saturday
-        <input type="checkbox" checked>sunday
-
-        <hr>
-
-        <input type="radio" name="day" value="fri" checked>friday
-        <input type="radio" name="day" value="sat">saturday
-        <input type="radio" name="day" value="sun">sunday
-
-
-        <hr>
-        <textarea cols="" rows=""></textarea>
-
-        <input type="text" value="" name="username">
-        <input type="color">
-        <input type="email" name="email">
-        <input type="password" name="psw">
-        <input type="range" min="10" max="100">
-        <input type="time">
-        <input type="date">
-        <input type="month">
-        <input type="search">
-        <input type="url">
-        <input type="datetime-local">
-        <input type="number">
-        <input type="tel">
-        <input type="week">
-        <hr>
-        <input type="file">
-
-        <input type="submit" value="hello world">
-
+        <input type="submit" />
+      </fieldset>
     </form>
 
+    <form class="form-2">
+      <label for="username">username</label>
+      <input
+        required
+        placeholder="enter username here"
+        type="text"
+        id="username" />
+      <label for="some-password">password</label>
+      <input
+        placeholder="password goes here"
+        type="password"
+        id="some-password" />
+      <input type="submit" />
+    </form>
   </body>
 </html>
